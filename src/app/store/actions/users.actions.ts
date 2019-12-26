@@ -21,7 +21,7 @@ export class LoadUsersSuccess implements Action {
     constructor(public users: User[]) { }
 }
 
-export type userActions = 
+export type usersActions = 
     LoadUsers |
     LoadUsersFail |
     LoadUsersSuccess;

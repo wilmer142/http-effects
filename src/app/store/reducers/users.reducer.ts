@@ -1,5 +1,5 @@
 import { User } from '../../models/user.model';
-import { userActions, LOAD_USERS, LOAD_USERS_SUCCESS, LOAD_USERS_FAIL } from '../actions/users.actions';
+import { usersActions, LOAD_USERS, LOAD_USERS_SUCCESS, LOAD_USERS_FAIL } from '../actions/users.actions';
 
 
 export interface UsersState {
@@ -16,7 +16,7 @@ const initialState: UsersState = {
     error: null
 }
 
-export function usersReducer(state = initialState, action: userActions): UsersState {
+export function usersReducer(state = initialState, action: usersActions): UsersState {
 
     switch (action.type) {
         case LOAD_USERS:
