@@ -22,7 +22,8 @@ export function usersReducer(state = initialState, action: userActions): UsersSt
         case LOAD_USERS:
             return {
                 ...state,
-                loading: true                
+                loading: true,
+                error: null                
             }
 
         case LOAD_USERS_SUCCESS:
