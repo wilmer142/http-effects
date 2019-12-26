@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { UsersModule } from './users/users.module';
 import { HttpClientModule } from "@angular/common/http";
+import { StoreModule } from '@ngrx/store';
+import { appReducers } from './store/app.reducer';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,7 @@ import { HttpClientModule } from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    StoreModule.forRoot(appReducers),
     SharedModule,
     UsersModule
   ],
